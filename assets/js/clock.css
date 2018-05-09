@@ -1,0 +1,101 @@
+div { border: 1px solid transparent; }
+
+#clock-rim {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(#ef8157, #F3BB45);
+  border-radius: 150px;
+}
+
+#clock-base {
+  display: block;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 19px auto;
+  border-radius: 150px;
+  background: white;
+}
+
+#second { position: absolute; top: 123px; left: 128px; width: 100px; height: 2px; border: 1px solid transparent; border-radius: 5px; transform: unset; background: #7A9E9F; transform-origin: 1px 1px; }
+#minute { position: absolute; top: 123px; left: 128px; width: 100px; height: 4px; border: 1px solid transparent; border-radius: 5px; transform: unset; background: #68B3C8; transform-origin: 2px 2px; }
+#hour { position: absolute; top: 123px; left: 128px; width: 50px; height: 4px; border: 1px solid transparent; border-radius: 5px; transform: unset; background: #7AC29A; transform-origin: 2px 2px; }
+#center { position: absolute; top: 118px; left: 120px; width: 16px; height: 16px; background: white; border: 1px solid gray; border-radius: 16px; }
+#brand { position: absolute; top: 110px; left: 165px; border: 1px solid gray; border-radius: 5px; width: 50px; height: 40px; font-family: themify; font-size: 14px; text-align: center; line-height: 20px; }
+
+#notch-container { width: 260px; height: 260px }
+.notch { position: absolute; width: 10px; height: 2px; background: black; border-radius: 5px 5px 5px 5px; }
+.thin { position: absolute; width: 10px; height: 1px; border-top: 1px solid gray; }
+
+
+
+/*DIGITAL CLOCK FONT*/
+
+@font-face {
+  font-family: 'digital-7';
+  src: url('assets/fonts/digital-7.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #ffffff;
+  background-color: #000000;
+  font-family: 'digital-7', sans-serif;
+}
+
+main {
+  text-align: center;
+  margin:150px auto;
+  max-width:728px;
+}
+
+/* CLOCK */
+
+div.clock { margin: 5px 0; }
+
+div.clock div {
+  display: inline-block;
+  position: relative;
+}
+
+div.clock div p {
+  font-size: 48px;
+  position: relative;
+  z-index: 100;
+}
+
+
+div.clock .meridian { margin-left: 15px; }/*END CLOCK*/
+
+/* AM OR PM*/
+
+.am-pm {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  width: 20px;
+}
+
+#fecha{
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+}
+
+div.am-pm div p {
+  font-size: 24px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.am, .pm { color: #a49e93; }
+
+/*CLASS THAT CHANGES COLOR OF TEXT TO APPEAR LIKE ITS "ON"*/
+
+.light-on { color: #ffffff; }
