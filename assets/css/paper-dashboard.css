@@ -14,6 +14,25 @@
 */
 /*      light colors - used for select dropdown         */
 /*           Social buttons            */
+.kv-avatar .krajee-default.file-preview-frame,.kv-avatar .krajee-default.file-preview-frame:hover {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+.kv-avatar {
+    display: inline-block;
+}
+.kv-avatar .file-input {
+    display: table-cell;
+    width: 213px;
+}
+.kv-reqd {
+    color: red;
+    font-family: monospace;
+    font-weight: normal;
+}
 .ct-blue {
   stroke: #7A9E9F !important;
 }
@@ -6383,7 +6402,7 @@ a.dropdown-toggle[aria-expanded="true"] .caret {
 }
 
 .form-control {
-  background-color:#fffcf5 ;   /* #fffcf5  #F3F2EE COLOR DEL INPUT ORIG    */   
+  background-color:#fffcf5 ;   /* #fffcf5  #F3F2EE COLOR DEL INPUT ORIG    */
   border: 1px solid #e8e7e3;
   border-radius: 4px;
   color: #66615b;
